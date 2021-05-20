@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+main {
+  background-image: url("./images/loginPageBackground.png");
+  background-repeat: none;
+  background-position: center 25%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*LOGIN PAGE*/
+
+.login-container {
+  background: white;
+  border-radius: 15px;
+  height: 500px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.657);
+}
+
+.login-header {
+  margin-top: 15%;
+}
+
+.login-error-message-container {
+  margin-bottom: 10px;
+  color: rgb(255, 94, 0);
+  font-size: 1em;
+  opacity: 0;
+}
+
+form {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-label {
+  font-size: 1.7em;
+  color: rgb(156, 156, 156);
+  margin-top: 15px;
+}
+
+.login-input {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  outline: none;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+}
