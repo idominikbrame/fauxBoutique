@@ -1,4 +1,3 @@
-console.log("hello i'm the login.js file")
 // manual testing passwords TODO:add tests for login.js
 let logins = [
   { username: 'admin', password: '1234'}
