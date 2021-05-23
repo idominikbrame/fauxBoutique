@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./app/css/styles.css">
   <title>Login - Faux Boutique</title>
 </head>
 <body>
+  <script async src="./app/js/login.js"></script>
   <main>
     <div class="login-container">
       <h1 class="login-header"> Fuax Boutique </h1>
 
       <form>
+        
+        <label class="login-label">Username</label>
+        <input type="text" required class="login-input" autocomplete="on" id="login-username">
+
+        <label class="login-label">Password</label>
+        <input type="password" required class="login-input" autocomplete="on" id="login-password">
         <div class="login-error-message-container">
           <p class="login-error-message">Invalid username or password</p>
         </div>
-        <label class="login-label">Username or E-mail</label>
-        <input type="text" required class="login-input">
-        <label class="login-label">Password</label>
-        <input type="password" required class="login-input">
+        <input type="submit" value="Login" id="login-submit">
       </form>
     </div>
   </main>
